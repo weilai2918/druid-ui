@@ -2,15 +2,19 @@
 name = "druid-ui"
 version = "0.0.1"
 edition = "2021"
-authon = "ruomeng"
+authon = "feifei"
 license = "MIT OR Apache-2.0"
 description = "Beautification package for Druid client"
 keywords = ["druid","ui","druid-ui"]
 #repository = "https://github.com/dream45678/generate_sql"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[example]]
+name = "button"
+test = false
+beach = false
 
 [dependencies]
-druid = {git = "https://github.com/linebender/druid.git",features = ["image-all"]}
-druid-shell = {git = "https://github.com/linebender/druid.git"}
+druid = {version = "0.8",features = ["image-all"]}
+druid-shell = {version = "0.8"}
 tracing = "0.1.36"
